@@ -34,9 +34,12 @@
     * **Impact**: All means put in place to prevent the victim from re-using their environment.
  *  A procedure is how a threat actor sets up onr or multiple techniques or sub-technique.
 * [The ATT&CK Matrix](https://attack.mitre.org/matrices/enterprise/)
- * With the ATT&CK Matrix, we can easily see all the tactics, their techniques, and sub-techniques
- * For example, the tactic *Initial Access* has several techniques, including *Phishing*, which itself includes sub-techniques, such as *Spearphishing Link*.
-* The ATT&CK Navigator
+  * With the ATT&CK Matrix, we can easily see all the tactics, their techniques, and sub-techniques
+  * For example, the tactic *Initial Access* has several techniques, including *Phishing*, which itself includes sub-techniques, such as *Spearphishing Link*.
+* [The ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/)
+  * Allows us to visualise the behavior of a tool, or the modus operandi of a threat actor, or to generate a security exercise.
+  * You are able to create as many layers as you want, and combiene them to study the relation between tools or threat actor.
+* Mapping with ATT&CK
 
 ----
 <a name="mitre"></a>
