@@ -17,6 +17,7 @@
   * You can use it as you like, and you can also create your own set of tactics, techniques, and procedures (TTPs).
 * Tactics, techniques, sub-techniques, and procedures
   * 14 tactics that include some sets of techniques. A tactic is the representation of the reason for a threat actor's behaviour.
+  * When the book was written, there were 183 techniques and around 372 sub-techniques.
     * **Reconnaissance**: Collect as much information as possible about the opponent's victim.
     * **Resource Development**: The technique aims to evaluate the resources employed by the adversary. The resources could be stolen, purchased, or developed.
     * **Initial Access**: How the threat actor enters the victim's environment.
@@ -31,6 +32,11 @@
     * **Command an Control**: All the way that the threat actor communicates with the system that he controls.
     * **Exfiltration**: It is the exfiltration of the information that has been collected during the *collection* tactic.
     * **Impact**: All means put in place to prevent the victim from re-using their environment.
+ *  A procedure is how a threat actor sets up onr or multiple techniques or sub-technique.
+* [The ATT&CK Matrix](https://attack.mitre.org/matrices/enterprise/)
+ * With the ATT&CK Matrix, we can easily see all the tactics, their techniques, and sub-techniques
+ * For example, the tactic *Initial Access* has several techniques, including *Phishing*, which itself includes sub-techniques, such as *Spearphishing Link*.
+* The ATT&CK Navigator
 
 ----
 <a name="mitre"></a>
