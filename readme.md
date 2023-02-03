@@ -67,7 +67,15 @@ Based on the *[h2 Goat](https://github.com/MatthieuBruh/h2_Goat#ddsummary)* assi
 
 ### Define technique and subtechnique, and give an example of each.
 
-When an attacker is gathering for some information about a victim, he has many possibilities, such as *[phishing](https://attack.mitre.org/techniques/T1598/)*. Unfortunately, phishing is a quite common and an efficient way to collect information about someone. It consists of sending messages to a victim by pretending to be someone else. The message that the attacker sends will ask for some information discreetly by establishing a false relationship of trust with the victim. So, the victim will be fairly confident to send information, such as credentials. 
+When an attacker is gathering for some information about a victim, he has many possibilities, such as *[phishing](https://attack.mitre.org/techniques/T1598/)*. Unfortunately, phishing is a quite common and an efficient way to collect information about someone. It consists of sending messages to a victim by pretending to be someone else. The message that the attacker sends will ask for some information discreetly by establishing a false relationship of trust with the victim. So, the victim will be fairly confident to send information, such as credentials. It is also important to note that an attack can do phishing a company B to have some information about the company A, because the both companies are working together.
+
+An attacker can for example send an email to a victim to ask him about who is in charge of paying invoices. So that, he can send a fake invoice by pretending to be someone else.
+
+
+When an attacker is gathering information about a victim, he can do it with several sub-techniques, such as *[spearphishing Attachment](https://attack.mitre.org/techniques/T1598/002/)*. Indeed, an attacker can send a file to a victim and giving him a reason to fulfil a document. Of course, the document is a pretext to take information from a victim. The excuse of an emergency case is often used to hurry the victim, in order to make it less vigilant.
+
+We can imagine that an attacker could pressure his victim to fill in a document that is supposedly urgent for a customer of the company.
+
 
 ### Define procedure, and give an example of each.
 
