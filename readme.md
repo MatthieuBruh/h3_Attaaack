@@ -92,16 +92,16 @@ I waited a few seconds, and the installation was done. To launch Wireshark as a 
     sudo wireshark
 
 From the main menu of the WS application, I selected *Loopback: lo*. A loopback is a kind of return to sender, so it was the best option to observe packets not leaving the VM.
-<p align="center"> <img alt="Wireshark main menu" src=""> </p>
+<p align="center"> <img alt="Wireshark main menu" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/Wireshar_MainMenu.png"> </p>
 
-I started the capture with WS, and I clicked on *Log in*. I immediatly saw new packets on WS, but one was more intersting, because it was a **POST** in **text/plain**.
-<p align="center"> <img alt="Wireshark packets" src=""> </p>
+I started the capture with WS, and I clicked on *Log in*. I immediately saw new packets on WS, but one was more interesting, because it was a **POST** in **text/plain**.
+<p align="center"> <img alt="Wireshark packets" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/Wireshar_Packets.PNG"> </p>
 
 So, I selected it, and I directly looked what was inside the text/plain. As if by magic, the credentials were there.
-<p align="center"> <img alt="Wireshark POST packet" src=""> </p>
+<p align="center"> <img alt="Wireshark POST packet" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/Wireshar_PacketPOST.PNG"> </p>
 
-I tried to enter them on WebGoat and the connection worked!
-<p align="center"> <img alt="Wireshark main menu" src=""> </p>
+I tried to enter the credentials on WebGoat and the connection worked!
+<p align="center"> <img alt="Wireshark main menu" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/Webgoat_connection.png"> </p>
 
 
 ----
