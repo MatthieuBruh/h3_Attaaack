@@ -59,9 +59,15 @@
 # Mitre Att&ck
 ## [Source](https://attack.mitre.org/)
 
-### Define tactic and give an example:
+### Define tactic and give an example
+
+We can take the example of the tactic **[reconnaissance](https://attack.mitre.org/tactics/TA0043/)**. In this step, the attacker/threat actor is trying to get some information about someone (the victim). It exists several techniques, some are passive and others actives. The information about the victim could be: how the infrastructure is set up; how the organization works; how many person are involved; who are the victims (roles, personality, etc.). The attacker can use this information to help him to achieve his goals.
+
+Based on the *[h2 Goat](https://github.com/MatthieuBruh/h2_Goat#ddsummary)* assignment, I can take the example of Evaldas Rimašauskas. Indeed, he wished to fool Facebook with some fake check. So, before acting, he needed to get some information about Facebook and how does the company work (who works there, who is responsible for what, etc.). 
 
 ### Define technique and subtechnique, and give an example of each.
+
+When an attacker is gathering for some information about a victim, he has many possibilities, such as *[phishing](https://attack.mitre.org/techniques/T1598/)*. Unfortunately, phishing is a quite common and an efficient way to collect information about someone. It consists of sending messages to a victim by pretending to be someone else. The message that the attacker sends will ask for some information discreetly by establishing a false relationship of trust with the victim. So, the victim will be fairly confident to send information, such as credentials. 
 
 ### Define procedure, and give an example of each.
 
