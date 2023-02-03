@@ -43,6 +43,13 @@
   * Allows us to visualise the behavior of a tool, or the modus operandi of a threat actor, or to generate a security exercise.
   * You are able to create as many layers as you want, and combiene them to study the relation between tools or threat actor.
 * Mapping with ATT&CK
+  * The exercise is based on a paper that has been presented at Virus Bulletin 2018: Inside Formbook Infostealer by the malware researcher [Gabriela Nicolao](https://www.virusbulletin.com/uploads/pdf/magazine/2018/VB2018-Nicolao.pdf).
+  * Formbook Infostealer is a browser logger software that is able to collect credentials from a web data, before that the victim's information gets to a server
+  * This latter work in many cases, such as: virtual keyboard, copy and paste, and auto-fill.
+  * With this software, their owners can track their victims by taking screenshots, by keylogging, and by stolen credentials.
+    * Steal authorization and login credentials: **Credentials Access**: T1555 --> T1555.003 ; T1056 --> T1056.001
+    * Keylog information: **Collection**: T1056 --> T1056.001
+    * Take screenshots: **Collection**: T1113
 
 ----
 <a name="mitre"></a>
