@@ -51,9 +51,9 @@
     * Steal authorization and login credentials: **Credentials Access**: T1555 --> T1555.003 ; T1056 --> T1056.001
     * Keylog information: **Collection**: T1056 --> T1056.001
     * Take screenshots: **Collection**: T1113
-
-
 <br>
+
+
 ----
 <a name="mitre"></a>
 # Mitre Att&ck
@@ -67,6 +67,8 @@
 
 
 <br>
+
+
 ----
 <a name="webgoat"></a>
 # WebGoat: A3 Sensitive data exposure
@@ -109,6 +111,8 @@ I tried to enter the credentials on WebGoat and the connection worked!
 
 
 <br>
+
+
 ----
 <a name="webgoat2"></a>
 # WebGoat: SQL Injection advanced (Voluntary) 
