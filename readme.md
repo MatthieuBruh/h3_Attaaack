@@ -5,14 +5,15 @@
 ## Table of Contens
 1. [ Mapping the Adversary - Summary. ](#chapter4)
 2. [ Mitre Att&ck - Answer. ](#mitre)
-3. [ WebGoat - Solve. ](#webgoat)
-4. [ WebGoat (Voluntary) - Solve. ](#webgoat2)
+3. [ WebGoat Sensitive data exposure - Solve. ](#webgoat)
+4. [ WebGoat SQL Injection (Voluntary) - Solve. ](#webgoat2)
 <br>
 
 ----
 <a name="chapter4"></a>
 # Chapter 4: Mapping the Adversary
 ## [Source](https://www.oreilly.com/library/view/practical-threat-intelligence/9781838556372/B13376_04_Final_SK_ePub.xhtml#_idParaDest-75)
+
 * ATT&CK Framework
   * Descriptive model that is capable to study the activities that a threat actor is able to implement to get established and to operate inside an environment,
   * Provides a common classification that describes adversary behaviors for the cybersecurity community,
@@ -56,15 +57,55 @@
 # Mitre Att&ck
 ## [Source](https://attack.mitre.org/)
 
+### Define tactic and give an example:
+
+### Define technique and subtechnique, and give an example of each.
+
+### Define procedure, and give an example of each.
+
 
 ----
 <a name="webgoat"></a>
 # WebGoat: A3 Sensitive data exposure
 ## [Source](https://owasp.org/www-project-webgoat/#:~:text=WebGoat%20is%20a%20deliberately%20insecure,and%20popular%20open%20source%20components.)
+*I did not need to install the WebGoat Spring server on my Debian, because it was already installed, due to the exercises of the first week [H1_FirstSteps](https://github.com/MatthieuBruh/h1_FirstSteps)*
+
+*I only started the server with the following command*:
+
+    java -jar webgoat-server-8.0.0.M26.jar
+
+*When the Spring server was started, I used Google Chrome to go on: localhost:8080/WebGoat*
+*However, for this exercise, I needed a packet sniffer. I decided to use Wireshark because I used it a lot in my networking classes.*
+### [Wireshark Installation](https://www.wireshark.org/)
+Before installing Wireshark (WS), I updated and upgraded all Debian VM. I used the following commands:
+
+    sudo apt update
+    sudo apt upgrade
+
+At this point, I was able to install WS using the command: 
+
+    sudo apt install wireshark -y
+
+During the installation, I had to select if I want to install Dumpcap, to allow non-superusers to capture packets. I selected NO, as it creates a security risk.
+I waited a few seconds, and the installation was done. To launch Wireshark as a superuser, I used the command:
+
+    sudo wireshark
+
+From the main menu of the WS application, I selected *Loopback: lo*. A loopback is a kind of return to sender, so it was the best option to observe packets not leaving the VM.
+<p align="center"> <img alt="Wireshark main menu" src=""> </p>
+
+I started the capture with WS, and I clicked on *Log in*. I immediatly saw new packets on WS, but one was more intersting, because it was a **POST** in **text/plain**.
+<p align="center"> <img alt="Wireshark packets" src=""> </p>
+
+So, I selected it, and I directly looked what was inside the text/plain. As if by magic, the credentials were there.
+<p align="center"> <img alt="Wireshark POST packet" src=""> </p>
+
+I tried to enter them on WebGoat and the connection worked!
+<p align="center"> <img alt="Wireshark main menu" src=""> </p>
 
 
 ----
 <a name="webgoat2"></a>
-# WebGoat: A3 Sensitive data exposure
+# WebGoat: SQL Injection (advanced)
 ## [Source](https://owasp.org/www-project-webgoat/#:~:text=WebGoat%20is%20a%20deliberately%20insecure,and%20popular%20open%20source%20components.)
 
