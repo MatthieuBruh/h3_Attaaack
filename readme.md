@@ -91,6 +91,7 @@ I waited a few seconds, and the installation was done. To launch Wireshark as a 
 
     sudo wireshark
 
+### Exercise
 From the main menu of the WS application, I selected *Loopback: lo*. A loopback is a kind of return to sender, so it was the best option to observe packets not leaving the VM.
 <p align="center"> <img alt="Wireshark main menu" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/Wireshar_MainMenu.png"> </p>
 
