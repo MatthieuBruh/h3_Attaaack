@@ -59,7 +59,7 @@
 # Mitre Att&ck
 ## [Source](https://attack.mitre.org/)
 
-### Define tactic and give an example
+### Define tactic and give an example.
 
 We can take the example of the tactic **[reconnaissance](https://attack.mitre.org/tactics/TA0043/)**. In this step, the attacker/threat actor is trying to get some information about someone (the victim). It exists several techniques, some are passive and others actives. The information about the victim could be: how the infrastructure is set up; how the organization works; how many person are involved; who are the victims (roles, personality, etc.). The attacker can use this information to help him to achieve his goals.
 
@@ -72,13 +72,15 @@ When an attacker is gathering for some information about a victim, he has many p
 An attacker can for example send an email to a victim to ask him about who is in charge of paying invoices. So that, he can send a fake invoice by pretending to be someone else.
 
 
-When an attacker is gathering information about a victim, he can do it with several sub-techniques, such as *[spearphishing Attachment](https://attack.mitre.org/techniques/T1598/002/)*. Indeed, an attacker can send a file to a victim and giving him a reason to fulfil a document. Of course, the document is a pretext to take information from a victim. The excuse of an emergency case is often used to hurry the victim, in order to make it less vigilant.
+When an attacker is gathering information about a victim, he can do it with several sub-techniques, such as *[spearphishing Attachment](https://attack.mitre.org/techniques/T1598/002/)*. Indeed, an attacker can send a file to a victim and giving him a reason to fulfil a document. Of course, the document is a pretext to take information from a victim. The excuse of an emergency case is often used to hurry the victim, in order to make it less vigilant. It is also possible that an attachment contains a malicious software that will be installed automatically when the file is executed/opened.
 
 We can imagine that an attacker could pressure his victim to fill in a document that is supposedly urgent for a customer of the company.
 
 
 ### Define procedure, and give an example of each.
+We can define a procedure as how does an attacker/threat actor implement a technique or sub-technique to achieve his goal.
 
+For example, an attacker wants to steal some information about an entity, for that, he wants to use a Trojan (malicious software). To install the Trojan inside the victim's computer, he can use the sub-technique of *[spearphishing attachment](https://attack.mitre.org/techniques/T1598/002/)*. It is the case of *[Astaroth](https://attack.mitre.org/software/S0373/)* that uses email to send malicious attachments to their victims.
 
 <br>
 
