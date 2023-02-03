@@ -52,6 +52,8 @@
     * Keylog information: **Collection**: T1056 --> T1056.001
     * Take screenshots: **Collection**: T1113
 
+
+<br>
 ----
 <a name="mitre"></a>
 # Mitre Att&ck
@@ -64,6 +66,7 @@
 ### Define procedure, and give an example of each.
 
 
+<br>
 ----
 <a name="webgoat"></a>
 # WebGoat: A3 Sensitive data exposure
@@ -105,6 +108,7 @@ I tried to enter the credentials on WebGoat and the connection worked!
 <p align="center"> <img alt="Wireshark main menu" src="https://github.com/MatthieuBruh/h3_Attaaack/blob/main/screenshots/Webgoat_connection.png"> </p>
 
 
+<br>
 ----
 <a name="webgoat2"></a>
 # WebGoat: SQL Injection advanced (Voluntary) 
